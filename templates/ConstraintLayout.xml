@@ -1,0 +1,104 @@
+<templateSet group="ConstraintLayout">
+  <template name="ttp" value="app:layout_constraintTop_toTopOf=&quot;parent&quot;" description="Add top of view to the top of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="tt" value="app:layout_constraintTop_toTopOf=&quot;$name$&quot;" description="Add top of view to the top of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="tbp" value="app:layout_constraintTop_toBottomOf=&quot;parent&quot;" description="Add top of view to the bottom of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="tb" value="app:layout_constraintTop_toBottomOf=&quot;$name$&quot;" description="Add top of view to the bottom of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="ssp" value="app:layout_constraintStart_toStartOf=&quot;parent&quot;" description="Add start of view to the start of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="ss" value="app:layout_constraintStart_toStartOf=&quot;$name$&quot;" description="Add start of view to the start of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="sep" value="app:layout_constraintStart_toEndOf=&quot;parent&quot;" description="Add start of view to the end of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="se" value="app:layout_constraintStart_toEndOf=&quot;$name$&quot;" description="Add start of view to the end of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="vguideline" value="&lt;androidx.constraintlayout.widget.Guideline&#10;    android:id=&quot;@+id/guideline_$id$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:orientation=&quot;vertical&quot;&#10;    app:layout_constraintGuide_percent=&quot;$percent$&quot; /&gt;" description="Add vertical guideline, with id and percentage" toReformat="true" toShortenFQNames="false">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="percent" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="esp" value="app:layout_constraintEnd_toStartOf=&quot;parent&quot;" description="Add end of view to the start of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="es" value="app:layout_constraintEnd_toStartOf=&quot;$name$&quot;" description="Add end of view to the start of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="eep" value="app:layout_constraintEnd_toEndOf=&quot;parent&quot;" description="Add end of view to the end of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="ee" value="app:layout_constraintEnd_toEndOf=&quot;$name$&quot;" description="Add end of view to the end of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="btp" value="app:layout_constraintBottom_toTopOf=&quot;parent&quot;" description="Add bottom of view to the top of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="bt" value="app:layout_constraintBottom_toTopOf=&quot;$name$&quot;" description="Add bottom of view to the top of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="bbp" value="app:layout_constraintBottom_toBottomOf=&quot;parent&quot;" description="Add bottom of view to the bottom of parent" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="bb" value="app:layout_constraintBottom_toBottomOf=&quot;$name$&quot;" description="Add bottom of view to the bottom of another view" toReformat="true" toShortenFQNames="false">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML_ATTRIBUTE" value="true" />
+    </context>
+  </template>
+  <template name="hguideline" value="&lt;androidx.constraintlayout.widget.Guideline&#10;    android:id=&quot;@+id/guideline_$id$&quot;&#10;    android:layout_width=&quot;wrap_content&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:orientation=&quot;horizontal&quot;&#10;    app:layout_constraintGuide_percent=&quot;$percent$&quot; /&gt;" description="Add horizontal guideline, with id and percentage" toReformat="true" toShortenFQNames="false">
+    <variable name="id" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="percent" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+</templateSet>
