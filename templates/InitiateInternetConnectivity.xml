@@ -1,0 +1,24 @@
+<templateSet group="InitiateInternetConnectivity">
+  <template name="connParameter" value="private val connectivityRepository: com.mai3.initiateandroid.connectivityManager.withLiveData.ConnectivityRepository" description="Declaration of Connection Repositiory in ViewModel" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="isInternetConnectedDeclare" value="/**&#10; * Get updates everytime internet connectivity changes&#10; */&#10;val isInternetConnected = connectivityRepository.isInternetConnectedLiveData&#10;&#10;/**&#10; * Get update only once&#10; */&#10;fun isInternetConnectedNoOfTimes(noOfTimes: Int = 1) = connectivityRepository.isInternetConnectedNoOfTimesLiveData(noOfTimes)" description="Internet Connected Live Data Declaration in ViewModel" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="isInternetConnectedTimesSelect" value="$ViewModel$.isInternetConnectedNoOfTimes().observe(viewLifecycleOwner){&#10;    if(it){&#10;        $SELECTION$&#10;    }&#10;}" description="Add observer for selected code with isInternetConnectedNoOfTimes()" toReformat="true" toShortenFQNames="true">
+    <variable name="ViewModel" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="isInternetConnectedSelect" value="$ViewModel$.isInternetConnected.observe(viewLifecycleOwner){&#10;    if(it){&#10;        $SELECTION$&#10;    }&#10;}" description="Add observer for selected code with isInternetConnected" toReformat="true" toShortenFQNames="true">
+    <variable name="ViewModel" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>

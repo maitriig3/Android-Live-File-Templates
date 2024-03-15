@@ -1,0 +1,17 @@
+<application>
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="InitiateDaggerHilt.kt" file-name="di/AppModule" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt" file-name="remote/ApiFunctions" reformat="true" live-template-enabled="false">
+        <template name="InitiateRetrofit.kt.child.3.kt" file-name="remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.2.kt" file-name="remote/request/RequestSample" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.0.kt" file-name="remote/Endpoints" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.1.kt" file-name="remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="InitiateRetrofit.kt.child.0.kt" file-name="remote/Endpoints" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.1.kt" file-name="remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.2.kt" file-name="remote/request/RequestSample" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.3.kt" file-name="remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
+    </default_templates>
+  </component>
+</application>

@@ -1,0 +1,9 @@
+<templateSet group="InitiateAndroid">
+  <template name="InitiateRetrofitinDaggerHilt" value="@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesRetrofitBuilder(): $PACKAGE_NAME$.remote.ApiFunctions {&#10;    return com.mai3.initiateandroid.network.retrofit.InitializeRetrofit.retrofitBuilder(&#10;        $PACKAGE_NAME$.remote.EndPoints.BASE_URL,&#10;        $PACKAGE_NAME$.remote.ApiFunctions::class.java&#10;    )&#10;}&#10;   &#10;@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesNetworkRepository(apiFunctions: $PACKAGE_NAME$.remote.ApiFunctions, context: android.app.Application): $PACKAGE_NAME$.remote.repository.NetworkRepository {&#10;    return $PACKAGE_NAME$.remote.repository.NetworkRepository(apiFunctions,context)&#10;}" description="Add retrofit builder and network repository in dagger hilt module class (Use this only if all the files related to retrofit are created or InitiateRetrofit file template is used)" toReformat="false" toShortenFQNames="true">
+    <variable name="PACKAGE_NAME" expression="currentPackage()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+</templateSet>
