@@ -1,0 +1,11 @@
+While committing new changes,
+-> Export all the settings
+-> Remove all the default and not required templates and export it for adding in Android-Live-FileTemplates
+	-> Export only File Templates, File Templates (schemes) and Live Templates (schemes)
+-> Import the previous settings
+
+
+initiateRetrofitInDaggerHilt
+-> Only after classes related to retrofit has been added by calling 'InitiateRetrofit' file template
+-> Need to import class after
+	-> can enable '"Add unambiguous imports on the fly" in File -> Settings -> Editor -> General -> Auto Import -> Kotlin' to import directly
