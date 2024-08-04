@@ -23,3 +23,9 @@ Things to add in wiki
 ^_^ - Changed package name to in_
 ^^ - Package name for import of binding file in view binding fragment file template
 
+14-04-24
+^^ - Live template in file template
+
+03-08-24
+^^ - Update ReadMe
+^^ - Commit new templates

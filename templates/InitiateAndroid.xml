@@ -1,9 +1,19 @@
 <templateSet group="InitiateAndroid">
-  <template name="InitiateRetrofitinDaggerHilt" value="@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesRetrofitBuilder(): $PACKAGE_NAME$.remote.ApiFunctions {&#10;    return com.mai3.initiateandroid.network.retrofit.InitializeRetrofit.retrofitBuilder(&#10;        $PACKAGE_NAME$.remote.EndPoints.BASE_URL,&#10;        $PACKAGE_NAME$.remote.ApiFunctions::class.java&#10;    )&#10;}&#10;   &#10;@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesNetworkRepository(apiFunctions: $PACKAGE_NAME$.remote.ApiFunctions, context: android.app.Application): $PACKAGE_NAME$.remote.repository.NetworkRepository {&#10;    return $PACKAGE_NAME$.remote.repository.NetworkRepository(apiFunctions,context)&#10;}" description="Add retrofit builder and network repository in dagger hilt module class (Use this only if all the files related to retrofit are created or InitiateRetrofit file template is used)" toReformat="false" toShortenFQNames="true">
-    <variable name="PACKAGE_NAME" expression="currentPackage()" defaultValue="" alwaysStopAt="true" />
+  <template name="initiateRetrofitInDaggerHilt" value="@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesRetrofitBuilder(): ApiFunctions {&#10;    return in_.mai3.initiateandroid.network.retrofit.InitializeRetrofit.retrofitBuilder(&#10;        EndPoints.BASE_URL,&#10;        ApiFunctions::class.java&#10;    )&#10;}&#10;   &#10;@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesNetworkRepository(apiFunctions: ApiFunctions, context: android.app.Application): NetworkRepository {&#10;    return NetworkRepository(apiFunctions,context)&#10;}" description="Add retrofit builder and network repository in dagger hilt module class (Use this only if all the files related to retrofit are created or InitiateRetrofit file template is used)" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="JAVA_CODE" value="true" />
-      <option name="KOTLIN" value="true" />
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="initiateRoomDatabaseInDaggerHilt" value="@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesAppDatabase(context: android.app.Application): AppDatabase{&#10;        return androidx.room.Room.databaseBuilder(&#10;            context,&#10;            AppDatabase::class.java,&#10;            &quot;$DATABASE_NAME$&quot;&#10;        ).build()&#10;    }" description="Add Room Databse builder in dagger hilt module class" toReformat="true" toShortenFQNames="true">
+    <variable name="DATABASE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
+    </context>
+  </template>
+  <template name="initiateSharedPreferencesInDaggerHilt" value="@dagger.Provides&#10;@Singleton&#10;fun providesPreferences(context: android.app.Application): android.content.SharedPreferences{&#10;    return context.getSharedPreferences(&quot;$PREFERENCES_NAME$&quot;, android.content.Context.MODE_PRIVATE)&#10;}&#10;&#10;@dagger.Provides&#10;@Singleton&#10;fun providesEditor(sharedPreferences: android.content.SharedPreferences): android.content.SharedPreferences.Editor{&#10;    return sharedPreferences.edit()&#10;}&#10;&#10;@dagger.Provides&#10;@Singleton&#10;fun providesPreferenceRepository(sharedPreferences: android.content.SharedPreferences,editor: android.content.SharedPreferences.Editor): PreferencesRepository{&#10;    return PreferencesRepositoryImpl(sharedPreferences, editor)&#10;}" description="Add shared preferences, editor and repository in dagger hilt module class" toReformat="false" toShortenFQNames="true">
+    <variable name="PREFERENCES_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
 </templateSet>
