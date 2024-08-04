@@ -1,4 +1,4 @@
-package ${PACKAGE_NAME}.remote.request
+package ${PACKAGE_NAME}.data.remote.request
 
 import com.google.gson.annotations.SerializedName
 

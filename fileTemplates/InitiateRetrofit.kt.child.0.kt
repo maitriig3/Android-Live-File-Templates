@@ -1,4 +1,4 @@
-package ${PACKAGE_NAME}.remote
+package ${PACKAGE_NAME}.data.remote
 
 object EndPoints {
 

@@ -1,17 +1,35 @@
 <application>
   <component name="ExportableFileTemplateSettings">
     <default_templates>
-      <template name="InitiateDaggerHilt.kt" file-name="di/AppModule" reformat="true" live-template-enabled="false" />
-      <template name="InitiateRetrofit.kt" file-name="remote/ApiFunctions" reformat="true" live-template-enabled="false">
-        <template name="InitiateRetrofit.kt.child.3.kt" file-name="remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
-        <template name="InitiateRetrofit.kt.child.2.kt" file-name="remote/request/RequestSample" reformat="true" live-template-enabled="false" />
-        <template name="InitiateRetrofit.kt.child.0.kt" file-name="remote/Endpoints" reformat="true" live-template-enabled="false" />
-        <template name="InitiateRetrofit.kt.child.1.kt" file-name="remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
+      <template name="InitiateDaggerHilt.kt" file-name="di/AppModule" reformat="true" live-template-enabled="true" />
+      <template name="InitiateImpl.kt" file-name="${Name}" reformat="true" live-template-enabled="false">
+        <template name="InitiateImpl.kt.child.0.kt" file-name="${Name}Impl" reformat="true" live-template-enabled="false" />
       </template>
-      <template name="InitiateRetrofit.kt.child.0.kt" file-name="remote/Endpoints" reformat="true" live-template-enabled="false" />
-      <template name="InitiateRetrofit.kt.child.1.kt" file-name="remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
-      <template name="InitiateRetrofit.kt.child.2.kt" file-name="remote/request/RequestSample" reformat="true" live-template-enabled="false" />
-      <template name="InitiateRetrofit.kt.child.3.kt" file-name="remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
+      <template name="InitiateImpl.kt.child.0.kt" file-name="${Name}Impl" reformat="true" live-template-enabled="false" />
+      <template name="InitiateListAdapterWithOnClick.kt" file-name="${Adapter_Name}Adapter" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRecyclerViewWithOnClick.kt" file-name="${Adapter_Name}Adapter" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt" file-name="data/remote/ApiFunctions" reformat="true" live-template-enabled="false">
+        <template name="InitiateRetrofit.kt.child.0.kt" file-name="data/remote/Endpoints" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.1.kt" file-name="data/remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.2.kt" file-name="data/remote/request/RequestSample" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRetrofit.kt.child.3.kt" file-name="data/remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="InitiateRetrofit.kt.child.0.kt" file-name="data/remote/Endpoints" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.1.kt" file-name="data/remote/repository/NetworkRepository" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.2.kt" file-name="data/remote/request/RequestSample" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRetrofit.kt.child.3.kt" file-name="data/remote/response/ResponseSample" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRoomDatabase.kt" file-name="data/local/room/AppDatabase" reformat="true" live-template-enabled="false">
+        <template name="InitiateRoomDatabase.kt.child.0.kt" file-name="data/local/room/dao/SampleDao" reformat="true" live-template-enabled="false" />
+        <template name="InitiateRoomDatabase.kt.child.1.kt" file-name="data/local/room/entity/SampleEntity" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="InitiateRoomDatabase.kt.child.0.kt" file-name="data/local/room/dao/SampleDao" reformat="true" live-template-enabled="false" />
+      <template name="InitiateRoomDatabase.kt.child.1.kt" file-name="data/local/room/entity/SampleEntity" reformat="true" live-template-enabled="false" />
+      <template name="InitiateSharedPreferences.kt" file-name="data/local/preferences/PreferencesKeys" reformat="true" live-template-enabled="false">
+        <template name="InitiateSharedPreferences.kt.child.0.kt" file-name="data/local/preferences/PreferencesRepositoryImpl" reformat="true" live-template-enabled="false" />
+        <template name="InitiateSharedPreferences.kt.child.1.kt" file-name="data/local/preferences/PreferencesRepository" reformat="true" live-template-enabled="false" />
+      </template>
+      <template name="InitiateSharedPreferences.kt.child.0.kt" file-name="data/local/preferences/PreferencesRepositoryImpl" reformat="true" live-template-enabled="false" />
+      <template name="InitiateSharedPreferences.kt.child.1.kt" file-name="data/local/preferences/PreferencesRepository" reformat="true" live-template-enabled="false" />
     </default_templates>
   </component>
 </application>

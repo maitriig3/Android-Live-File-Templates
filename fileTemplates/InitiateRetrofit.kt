@@ -1,9 +1,9 @@
-package ${PACKAGE_NAME}.remote
+package ${PACKAGE_NAME}.data.remote
 
-import com.mai3.initiateandroid.network.retrofit.NetworkData
-import ${PACKAGE_NAME}.remote.EndPoints.SAMPLE
-import ${PACKAGE_NAME}.remote.request.RequestSample
-import ${PACKAGE_NAME}.remote.response.ResponseSample
+import in_.mai3.initiateandroid.network.retrofit.NetworkData
+import ${PACKAGE_NAME}.data.remote.EndPoints.SAMPLE
+import ${PACKAGE_NAME}.data.remote.request.RequestSample
+import ${PACKAGE_NAME}.data.remote.response.ResponseSample
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.POST

@@ -1,0 +1,31 @@
+^^ - To Do
+^!^ - Test it
+^_^ - Completed
+
+19-03-24
+Things to add in Readme.md
+^^ - Setup with photo
+^^ - Template name and one line explanation
+^^ - Steps to export only required templates
+^^ - Contributions
+^^ - Issues and Discussions
+^^ - License
+
+Things to add in wiki
+^^ - Detailed explanation for each template
+
+25-03-24
+^^ - Update steps.txt file for old templates
+^^ - Dagger hilt file template for application class
+^_^ - Dagger hilt package name in live template
+
+31-03-24
+^_^ - Changed package name to in_
+^^ - Package name for import of binding file in view binding fragment file template
+
+14-04-24
+^^ - Live template in file template
+
+03-08-24
+^^ - Update ReadMe
+^^ - Commit new templates

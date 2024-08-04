@@ -1,5 +1,5 @@
 <templateSet group="InitiateInternetConnectivity">
-  <template name="connParameter" value="private val connectivityRepository: com.mai3.initiateandroid.connectivityManager.withLiveData.ConnectivityRepository" description="Declaration of Connection Repositiory in ViewModel" toReformat="true" toShortenFQNames="true">
+  <template name="connParameter" value="private val connectivityRepository: in_.mai3.initiateandroid.connectivityManager.withLiveData.ConnectivityRepository" description="Declaration of Connection Repositiory in ViewModel" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_CLASS" value="true" />
     </context>
@@ -19,6 +19,11 @@
     <variable name="ViewModel" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="KOTLIN" value="true" />
+    </context>
+  </template>
+  <template name="initiateInternetConnectivityInDaggerHilt" value="@dagger.Provides&#10;@javax.inject.Singleton&#10;fun providesConnectivityRepository(context: android.app.Application): in_.mai3.initiateandroid.connectivityManager.withLiveData.ConnectivityRepository{&#10;    return in_.mai3.initiateandroid.connectivityManager.withLiveData.ConnectivityRepository(context)&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
 </templateSet>
